@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/moda1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1300 TL"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_25ssp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description description description"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/text_light_color"
+            android:textStyle="normal"
+            android:textSize="@dimen/_12ssp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/moda2"
+                android:scaleType="centerCrop"
+                app:strokeWidth="@dimen/_3sdp"
+                app:strokeColor="@android:color/white"
+                app:shapeAppearanceOverlay="@style/Circular"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mağaza İsmi"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_15ssp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İstanbul Şişli / Osmanbey"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/_17ssp"
+            android:layout_gravity="center"
+            android:text="Mağaza İsmi"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notifications"
+            app:tint="@color/text_color"/>
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_menu"
+            android:layout_gravity="center"
+            app:tint="@color/text_color"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_header">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/moda2"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="Mağaza İsmi"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="Ünvan"
+                android:textStyle="bold"
+                android:textColor="@color/text_mid_color"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_profil"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="0532 123 45 67"
+                android:textColor="@color/text_light_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_phone"
+                android:layout_gravity="center"
+                app:tint="@color/text_light_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="İstanbul - Şişli / Osmanbey"
+                android:textColor="@color/text_light_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_star_search"
+                android:layout_gravity="center"
+                app:tint="@color/text_light_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_info"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAllCaps="false"
+        android:padding="1dp"
+        android:text="Takip Et"
+        android:textSize="@dimen/_15ssp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_down_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:layout_weight="1"
+            android:text="Gönderiler"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@color/text_color"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_12ssp"
+                android:text="Hepsini Görüntüle"
+                android:textStyle="normal"
+                android:textColor="@color/text_mid_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_mid_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_down_header"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeHeader"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_rv"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at urna justo. Donec auctor commodo eros vel varius. Integer commodo nunc ac ipsum interdum, eget tempor mauris aliquet. Sed fringilla est ac ante blandit, vitae commodo nulla bibendum. Sed eu ultrices ipsum, et euismod mi. Sed commodo lectus at metus bibendum, quis vestibulum nibh tristique. Sed id mi et velit congue pharetra. Sed bibendum augue at quam consectetur eleifend. Sed vel nisl justo. Fusce ultrices eget mauris vel scelerisque. Suspendisse potenti. Donec ac odio aliquet, hendrerit justo ut, sollicitudin ipsum. Quisque ac pharetra felis, ac semper augue. Maecenas commodo neque ac ante rutrum imperdiet. Nulla in risus nec leo varius consectetur. Donec vel risus a enim fermentum vestibulum. Quisque euismod enim velit, vel elementum ex tincidunt at. Donec euismod gravida sem non feugiat. Aliquam euismod orci sit amet venenatis feugiat. Quisque molestie nulla in orci fermentum, a iaculis velit eleifend. Proin consectetur felis felis, at imperdiet turpis mollis sed. Nulla facilisi. Nullam quis justo quis nulla dapibus consectetur."
+            android:maxLines="3"
+            android:textColor="@color/text_light_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/hepsiburada"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="hepsiburada.com/magaza/test1"
+                android:textColor="@color/orange"
+                android:textStyle="normal"
+                android:textSize="@dimen/_14ssp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/amazon_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="shopify.com/magaza/test1"
+                android:textColor="@color/orange"
+                android:textStyle="normal"
+                android:textSize="@dimen/_14ssp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="Tüm Linkleri Gör"
+                android:textStyle="bold"
+                android:textColor="@color/orange"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/orange" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
